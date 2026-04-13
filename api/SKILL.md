@@ -3,7 +3,7 @@ name: celper
 description: 'Celper AI REST API integration guide. Invoke-only via /celper. Use this whenever building an integration against the Celper API, getting started with Celper, importing or managing candidates via API, listing job positions, setting up webhooks, verifying webhook signatures, handling API authentication or scopes, dealing with pagination, rate limiting, idempotency, or debugging API errors — even if the user does not say "API" explicitly. Covers all endpoints, authentication, error handling, and client-side best practices.'
 metadata:
   author: celper-ai
-  version: "2.0.0"
+  version: "1.0.0"
 ---
 
 # Celper AI API Integration Guide
