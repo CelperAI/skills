@@ -1,9 +1,9 @@
 ---
 name: celper
-description: 'Celper AI REST API integration guide. Invoke-only via /celper. Use this whenever building an integration against the Celper API, getting started with Celper, importing or managing candidates via API, listing job positions, setting up webhooks, verifying webhook signatures, handling API authentication or scopes, dealing with pagination, rate limiting, idempotency, or debugging API errors — even if the user does not say "API" explicitly. Covers all endpoints, authentication, error handling, and client-side best practices.'
+description: 'Celper AI REST API integration guide for external clients. Invoke-only via /celper. Covers authentication, all endpoints, pagination, rate limiting, idempotency, webhooks, and error handling.'
 metadata:
   author: celper-ai
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
 # Celper AI API Integration Guide
@@ -12,7 +12,7 @@ This skill helps you integrate with the Celper AI public REST API. It covers aut
 
 **Base URL:** `https://api.celper.ai/v1`
 
-**API docs:** `GET /v1/docs` returns the OpenAPI 3.1 specification. A Swagger UI is also available at that endpoint.
+**API docs:** `GET /v1/docs` returns the OpenAPI 3.1 specification.
 
 For a quick walkthrough of making your first requests, read **`references/quickstart.md`**.
 
@@ -62,7 +62,7 @@ The `manage:webhooks` scope additionally requires your user role to be **owner**
 
 ```
 GET  /v1/health                              No auth required
-GET  /v1/docs                                OpenAPI spec / Swagger UI
+GET  /v1/docs                                OpenAPI spec
 ```
 
 ### Job Positions
